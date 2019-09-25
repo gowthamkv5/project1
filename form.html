@@ -1,0 +1,414 @@
+
+<div class="jumbotron">
+   <h1 class="formreportheading">SUNDARAM BRAKE LININGS LIMITED</h1>
+   <h4 class="formreportdescription">FINAL INSPECTION RECORD PRODUCT AUDIT REPORT</h4>
+</div>
+<div class="container bg-primary" >
+   <form method="POST" action="inspectsave.php">
+      <div class="form-group">
+         <div class="row">
+            <div class="col-lg-4">
+            <label for="usr">Name:</label>
+               <input type="text" class="form-control" name="name" id="name" required>
+            </div>
+            <div class="col-lg-4">
+               <label for="shift" >Shift</label>
+               <select  class="form-control" id="shift" name="shift">
+                  <option>I</option>
+                  <option>II</option>
+                  <option>III</option>
+               </select>
+            </div>
+            <div class="col-lg-4">
+            <label for="usr">Engg Rev:</label>
+               <input type="text" class="form-control" name="eng" id="eng" required>
+            </div>
+         </div>
+         </br>
+         <!-- row1  starts-->
+         <div class="row">
+            <div class = "col-lg-4">
+               <label for="usr">Part Number:</label>
+               <input type="text" class="form-control" name="part_number" id="part_number" tabindex="1" required>
+            </div>
+            <div class = "col-lg-4">
+               <label for="usr">Size:</label>
+               <input type="text" class="form-control" name="size" id="size">
+            </div>
+            <div class = "col-lg-4">
+               <label for="usr">Batch Code:</label>
+               <input type="text" class="form-control" name="batch_code" id="batch_code">
+            </div>
+         </div>
+         <!-- row1  ends-->
+         </br>
+         <!-- row2  starts-->
+         <div class="row">
+            <div class = "col-lg-4">
+               <label for="usr">Grade:</label>
+               <input type="text" class="form-control" name="grade" id="grade" tabindex="2" required>
+            </div>
+            <div class = "col-lg-4">
+               <label for="usr">Mix Number:</label>
+               <input type="text" class="form-control" name="mix_no" id="mix_no">
+            </div>
+            <div class = "col-lg-4">
+               <label for="usr">Drilled or Undrilled:</label>
+               <input type="text" class="form-control" name="drilled" id="drilled">
+            </div>
+         </div>
+         </br>
+         <!-- row2  ends-->
+         <!-- row3  starts-->
+         <div class="row">
+            <div class = "col-lg-4">
+               <label for="usr">OKD Number:</label>
+               <input type="text" class="form-control" name="okd_no" id="okd_no" required>
+            </div>
+            <div class = "col-lg-4">
+               <label for="usr">Quantity:</label>
+               <input type="text" class="form-control" name="quantity" id="quantity">
+            </div>
+            <div class = "col-lg-4">
+               <label for="usr">Sample quantity:</label>
+               <input type="text" class="form-control" id="sample_quantity" name="sample_quantity">
+            </div>
+         </div>
+         <!-- row3  ends-->
+         <br>
+         <br>
+         <br>
+         <!-- table starts -->
+         <div class="row">
+            <table class="table table-dark table-striped text-center">
+               <thead>
+                  <tr>
+                     <th colspan=2>SI.No </th>
+                     <th colspan=2>Quality Parameter</th>
+                     <th colspan=2>Required</th>
+                     <th colspan=2>Method/Gauge Ref</th>
+                     <th colspan=1>Observed</th>
+                     <th >Status</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td colspan="2">1</td>
+                     <td colspan=1>Width</td>
+                     <td rowspan="1" ><input type="hidden" class="form-control" val=""  name="A1"></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A2" name="A2"></td>
+                     <td >Vernier Caliper</td>
+                     <td ><input type="text"  class="form-control" name="extra1" id ="extra1"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A3" name="A3"  tabindex="3" required> </td>
+                     <td colspan="2"><input type="text" class="form-control" id="A4" name="A4"  required></td>
+                  </tr>
+
+                          <tr>
+                     <td colspan="2">2</td>
+                     <td colspan=1>ID Cross grinding</td>
+                     <td rowspan="1" ><input type="hidden" class="form-control" val=""  name="E1"></td>
+                     <td colspan="2"><input type="text" class="form-control" id="E2" name="E2"></td>
+                     <td >Radius/Acceptance Gauge SAG</td>
+                     <td ><input type="text"  class="form-control" name="extraE1" id ="extraE1"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="E3" name="E3" tabindex="4" required> </td>
+                     <td colspan="2"><input type="text" class="form-control" id="E4" name="E4"  required></td>
+                  </tr>
+
+
+                  <tr>
+                     <td rowspan="2" colspan="2">3</td>
+                     <td rowspan="2" style="vertical-align : middle;text-align:center;">Thickness</td>
+                     <td>Thick End</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A5" name="A5"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A6"></td> -->
+                     <td >Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra2" id ="extra2"></td>
+                     <td colspan="1"> <input type="text" class="form-control" id="A7" name="A7" tabindex="5"  required ></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A8" name="A8"  required></td>
+                  </tr>
+                  <tr>
+                     <td>Thin End</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A9" name="A9"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A10"></td> -->
+                     <td>Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra3" id ="extra3"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A11" name="A11" tabindex="6" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A12" name="A12"  required></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">4</td>
+                     <td colspan="2">Thickness variation</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A13" name="A13"></td>
+                     <td colspan="1">Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra4" id ="extra4"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A14" name="A14" tabindex="7" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A15" name="A15" required></td>
+                  </tr>
+                  <tr>
+                     <td rowspan="4" colspan="2">5</td>
+                     <td rowspan="4" style="vertical-align : middle;text-align:center;">Hole Spot thickness(from thick and ref)</td>
+                     <td>Hole Spot1</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A16" name="A16"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A17"></td> -->
+                     <td >Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra5" id ="extra5"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A18" name="A18" tabindex="8" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A19" name="A19" required></td>
+                  </tr>
+                  <tr>
+                     <td>Hole Spot2</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A20" name="A20"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A21"></td> -->
+                     <td >Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra6" id ="extra6"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A22" name="A22" tabindex="9" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A23" name="A23" required></td>
+                  </tr>
+                  <tr>
+                     <td>Hole Spot3</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A24" name="A24"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A25"></td> -->
+                     <td >Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra7" id ="extra7"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A26" name="A26" tabindex="10" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A27" name="A27" required></td>
+                  </tr>
+                  <tr>
+                     <td>Hole Spot4</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A28" name="A28"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A29"></td> -->
+                     <td >Ball Micrometer</td>
+                     <td ><input type="text"  class="form-control" name="extra8" id ="extra8"></td>
+                     <td colspan="1"><input type="text" class="form-control" id="A30" name="A30" tabindex="11" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A31" name="A31" required></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">6</td>
+                     <td colspan="2">Outer radius profile(TIR) (combined method)</td>
+                     <td colspan ="2"><input type="text" class="form-control" id="A32" name="A32"></td>
+                     <td colspan="1">TIR Gauge (Plunger dial)</td>
+                     <td ><input type="text"  class="form-control" name="extra9" id ="extra9"></td>
+                     <td ><input type="text" class="form-control" id="A33" name="A33" tabindex="12" required></td>
+                     <td colspan="2"><input type="text" class="form-control" id="A34" name="A34" required></td>
+                  </tr>
+
+                  <tr>
+                     <td rowspan="2" colspan="2">7</td>
+                     <td rowspan="2" style="vertical-align : middle;text-align:center;">Flatness</td>
+                     <td>Id</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A35" name="A35"></td>
+                     <td colspan="1" rowspan="2" style="vertical-align : middle;text-align:center;">Feeler Gauge Straight Edge</td>
+                     <td rowspan="2" style="vertical-align : middle;text-align:center;" ><input type="text"   class="form-control" name="extra10" id ="extra10"></td>
+                     <td rowspan="1" ><input type="text" class="form-control" tabindex="13" id="A36" name="A36" required></td>
+                     <td rowspan="1" ><input type="text" class="form-control"  id="A37" name="A37" required></td>
+                  </tr>
+                  <td>OD</td>
+                  <td colspan="2"><input type="text" class="form-control"  id="A38" name="A38"></td>
+                  <td rowspan="1" ><input type="text" class="form-control" tabindex="14" id="Anew36" name="Anew36" required></td>
+                     <td rowspan="1" ><input type="text" class="form-control" id="Anew37" name="Anew37" required></td>
+                  </tr>
+
+                  <tr>
+                     <td rowspan="2" colspan="2">8</td>
+                     <td rowspan="2" colspan="2" style="vertical-align : middle;text-align:center;">Radius</td>
+                     <td>Heel</td>
+                     <td><input type="text" class="form-control" id="A41" name="A41"></td>
+                     <td colspan="1" rowspan="2" style="vertical-align : middle;text-align:center;">Radius Gauge    SAG</td>
+                     <td  rowspan="2" style="vertical-align : middle;text-align:center;" ><input type="text"   class="form-control" name="extra11" id ="extra11"></td>
+                     <td rowspan="1" ><input type="text" class="form-control" tabindex="15" id="A42" name="A42" required></td>
+                     <td rowspan="1" ><input type="text" class="form-control" id="A43" name="A43" required></td>
+                  </tr>
+                  <td>Crown</td>
+                  <td><input type="text" class="form-control" id="A44" name="A44"></td>
+                  <td rowspan="1" ><input type="text" class="form-control" tabindex="16" id="Anew42" name="Anew42" required></td>
+                     <td rowspan="1" ><input type="text" class="form-control" id="Anew43" name="Anew43" required></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">9</td>
+                     <td colspan="2">Rivet Hole Diameter</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A47" name="A47"></td>
+                     <td colspan="1">Plug Gauge SAG</td>
+                     <td  ><input type="text"   class="form-control" name="extra12" id ="extra12"></td>
+                     <td><input type="text" class="form-control" id="A48" name="A48" tabindex="17" required></td>
+                     <td><input type="text" class="form-control" id="A49" name="A49" ></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">10</td>
+                     <td colspan="2">Counterbore Diameter</td>
+                     <td colspan="2"><input type="text" class="form-control"  name="A50"></td>
+                     <td colspan="1">Plug Gauge SAG</td>
+                     <td  ><input type="text"   class="form-control" name="extra13" id ="extra13"></td>
+                     <td><input type="text" class="form-control" id="A51" name="A51" tabindex="18" required></td>
+                     <td><input type="text" class="form-control" id="A52" name="A52" ></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">11</td>
+                     <td colspan="2">Crimp Height</td>
+                     <td colspan="2"><input type="text"   class="form-control" name="new1" id ="new1"></td>
+                     <td colspan="1">Visual/SAG</td>
+                     <td  ><input type="text"   class="form-control" name="extra14" id ="extra14"></td>
+                     <td><input type="text" class="form-control" id="A53" name="A53" tabindex="19" required></td>
+                     <td><input type="text" class="form-control" id="A54" name="A54" ></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">12</td>
+                     <td  colspan="2">FHD</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A55" name="A55"></td>
+                     <!-- <td><input type="text" class="form-control"  name="A56"></td> -->
+                     <td colspan="1">Tube Micrometer</td>
+                     <td  ><input type="text"   class="form-control" name="extra15" id ="extra15"></td>
+                     <td ><input type="text" class="form-control" tabindex="20" id="A57" name="A57" required></td>
+                     <td ><input type="text" class="form-control" id="A58" name="A58" required></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">13</td>
+                     <td colspan="2">CED/Drill Centralization</td>
+                     <td colspan="2"><input type="text" class="form-control" id="A59" name="A59"></td>
+                     <td colspan="1">Tube Micrometer</td>
+                     <td  ><input type="text"   class="form-control" name="extra16" id ="extra16"></td>
+                     <td ><input type="text" class="form-control" tabindex="20" id="A60" name="A60" required></td>
+                     <td><input type="text" class="form-control"  id="A61" name="A61" required></td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">14</td>
+                     <td  colspan="2">Hole Position/Pitch distance</td>
+                     <td  colspan="2"><input type="text" class="form-control"  name="A62"></td>
+                     <td  colspan="1">Accept Gauuge SAG</td>
+                     <td  ><input type="text"   class="form-control" name="extra17" id ="extra17"></td>
+                     <td ><input type="text" class="form-control" tabindex="21" id="A63" name="A63" required></td>
+                     <td><input type="text" class="form-control" id="A64" name="A64" ></td>
+                  </tr>
+                  <tr>
+                     <td rowspan="4" colspan="2">15</td>
+                     <td rowspan="2" colspan="2" style="vertical-align : middle;text-align:center;">Wear Groove</td>
+                     <td>Width</td>
+                     <td><input type="text" class="form-control" id="A65" name="A65"></td>
+                     <td rowspan="2" colspan="1" style="vertical-align : middle;text-align:center;">Vernier Caliper</td>
+                     <td rowspan="2" style="vertical-align : middle;text-align:center;" >
+                     <input type="text"   class="form-control" name="extra18" id ="extra18"></td>
+                     <td><input type="text" class="form-control" tabindex="22" id="A66" name="A66" required></td>
+                     <td><input type="text" class="form-control" id="A67" name="A67" required></td>
+                  </tr>
+                  <td>Depth</td>
+                  <td><input type="text" class="form-control" id="A68" name="A68"></td>
+                  
+                  <td><input type="text" class="form-control" tabindex="23" id="A69" name="A69" required></td>
+                  <td><input type="text" class="form-control"  id="A70" name="A70" required></td>
+                  </tr>
+                  <tr>
+                     <td rowspan="2" colspan="2" style="vertical-align : middle;text-align:center;">Notching</td>
+                     <td>Thickness</td>
+                     <td><input type="text" class="form-control" id="A71" name="A71"></td>
+                     <td colspan="1">Flat Micrometer</td>
+                     <td  ><input type="text"   class="form-control" name="extra19" id ="extra19"></td>
+                     <td><input type="text" class="form-control" tabindex="24" id="A72" name="A72" required></td>
+                     <td><input type="text" class="form-control"  id="A73" name="A73" required></td>
+                  </tr>
+                  <td>Length</td>
+                  <td><input type="text" class="form-control" id="A74" name="A74"></td>
+                  <td colspan="1">Vernier Caliper</td>
+                  <td  ><input type="text"   class="form-control" name="extra20" id ="extra20"></td>
+                  <td><input type="text" class="form-control" tabindex="25" id="A75" name="A75" required></td>
+                  <td><input type="text" class="form-control" id="A76" name="A76" required></td>
+                  </tr>
+                  <tr>
+                     <td rowspan="4" colspan="2">16</td>
+                     <td rowspan="4" style="vertical-align : middle;text-align:center;">Chamfer</td>
+                     <td>Thick End</td>
+                     <td>Length </td>
+                     <td><input type="text" class="form-control"  name="A77"></td>
+                     <td  rowspan="2" style="vertical-align : middle;text-align:center;">Vernier Caliper</td>
+
+                    <td rowspan="2" style="vertical-align : middle;text-align:center;" >
+                    <input type="text"   class="form-control" name="extra21" id ="extra21"></td>
+
+                     <td colspan="1" rowspan="1"> <input type="text" class="form-control" id="A78"  name="A78" tabindex="26" required></td>
+                     <td colspan="2" rowspan="1" ><input type="text" class="form-control"  id="A79" name="A79" ></td>
+                  </tr>
+                  <tr>
+                     <td>Thick End</td>
+                     <td> Land</td>
+                     <td><input type="text" class="form-control"  name="A80"></td>
+                     <td colspan="1" rowspan="1"> <input type="text" class="form-control"  tabindex="27" id="Anew78" name="Anew78" required></td>
+                     <td colspan="2" rowspan="1" ><input type="text" class="form-control"  id="Anew79" name="Anew79" ></td>
+                  </tr>
+                  <tr>
+                     <td>Thin End</td>
+                     <td>Length </td>
+                     <td><input type="text" class="form-control" id="A1180" name="A1180"></td>
+                     <td rowspan="2" style="vertical-align : middle;text-align:center;">Vernier Caliper</td>
+                     <td rowspan="2" style="vertical-align : middle;text-align:center;" >
+                     <input type="text"   class="form-control" name="extra22" id ="extra22"></td>
+
+                     <td colspan="1" rowspan="1" ><input type="text"  class="form-control" id="A1181" name="A1181" tabindex="28" required></td>
+                     <td colspan="2" rowspan="1"><input type="text" class="form-control"  id="A1182" name="A1182" required></td>
+                  </tr>
+                  <tr>
+                     <td>Thin End</td>
+                     <td> Land</td>
+                     <td><input type="text" class="form-control" id="A180" name="A180"></td>
+                     <td colspan="1" rowspan="1" ><input type="text" class="form-control" tabindex="29" id="Anew1181" name="Anew1181" required></td>
+                     <td colspan="2" rowspan="1"><input type="text" class="form-control" id="Anew1182" name="Anew1182" required></td>
+                  </tr>
+                  </tr>
+                  <tr>
+                     <td  colspan="2">17</td>
+                     <td  colspan="2">Visual</td>
+                     <td  colspan="2">Free from defects(Crack,damages,missing operations &(B&L)</td>
+                     <td  colspan="1">Visual</td>
+                     <td  ><input type="text"   class="form-control" name="extra23" id ="extra23"></td>
+                     <td colspan="2"><input type="text" class="form-control" tabindex="30" name="A83" required></td>
+                     <!-- <td><input type="text" class="form-control"  name="A84" required></td> -->
+                  </tr>
+                  <tr>
+                     <td  colspan="2">18</td>
+                     <td  colspan="2">Internal defects</td>
+                     <td  colspan="2">Free from Internal defects</td>
+                     <td  colspan="1">Tap test(Sound Test)</td>
+                     <td  ><input type="text"   class="form-control" name="extra24" id ="extra24"></td>
+                     <td colspan="2"><input type="text" class="form-control" tabindex="31"  name="A85" required></td>
+                     <!-- <td><input type="text" class="form-control"  name="A86" required></td> -->
+                  </tr>
+                  <tr>
+                     <td  colspan="2">19</td>
+                     <td  colspan="2">Marking Details</td>
+                     <td  colspan="2">As per Drg./Check list</td>
+                     <td  colspan="1">Visual </td>
+                     <td  ><input type="text"   class="form-control" name="extra25" id ="extra25"></td>
+                     <td colspan="2"><input type="text" class="form-control" tabindex="32" name="A87" required></td>
+                     <!-- <td><input type="text" class="form-control"  name="A88" required></td> -->
+                  </tr>
+                  <tr>
+                     <td colspan="2">20</td>
+                     <td>Remarks</td>
+                     <td colspan="3"><input type="text" class="form-control"  name="remarks" ></td>
+                     <td>status</td>
+                     <td colspan="4">
+                        <div class="form-check-inline">
+                           <label class="form-check-label">
+                           <input type="radio" class="form-check-input" name="status" value="Accepted" checked="checked">Accepted
+                           </label>
+                        </div>
+                        <div class="form-check-inline">
+                           <label class="form-check-label">
+                           <input type="radio" class="form-check-input" name="status" value="Rejected">Rejected
+                           </label>
+                        </div>
+                     </td>
+                     </td>
+                  <tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-5 bg-warning">
+            <h1>Packing  Audit Report </h1>
+            </div>
+            <div class="col-lg-3">
+            </div>
+
+            </div>
+        <br>
+     
