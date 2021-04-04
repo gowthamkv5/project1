@@ -183,49 +183,8 @@
         <td id="A43" colspan="1"><input type="text" class="form-control" id="B5"></td> 
          <td id="A44" colspan="2"><input type="text" class="form-control" id="B5"></td>
          </tr>
-		 
-	<!--	 <tr>
-      <td colspan="2" rowspan="4">12</td>
-        <td style="text-align:left" colspan=1 rowspan="4">Chamfer</td>
-        <td  colspan="1" rowspan="2">Thick End</td>
-		<td rowspan="1">Length</td>
-		<td id="A45" colspan="2" rowspan="1"></td>
-		<td  colspan="1"id="A46"></td>
-		<td   colspan="1"id="A47"></td>
-		<td colspan="2" id="A48"></td>	
-		
-         </tr>
-		 
-		 
-		  <tr>
-       <td id="A2" colspan="1">Land</td>
-		<td id="A49" colspan="2"></td>
-	
-		<td colspan="1"id="A50"></td>
-		<td colspan="1"id="A51"></td>
-		<td colspan="2" id="A52"></td>	
-		
-         </tr>
-		
+			 
 		 <tr>
-       <td id="A2" colspan="1" rowspan="2">Thick End</td>
-		<td rowspan="1">Length</td>
-		<td id="A53" colspan="2" rowspan="1"></td>
-		<td colspan="1"id="A54"></td>
-		<td colspan="1"id="A55"></td>
-		<td colspan="2" id="A56"></td>	
-		</tr>
-		 <tr>
-       <td id="A57" colspan="1">Land</td>	
-		<td colspan="2"></td>
-	
-		<td colspan="1"id="A58"></td>
-		<td colspan="1"id="A59"></td>
-		<td colspan="2" id="A60"></td>	
-		
-         </tr>-->
-		 
-		     <tr>
       <td colspan="2">12</td>
         <td style="text-align:left" colspan=3>Sound test / Visual</td>
         <td id="A45" colspan="2">Blister / Dent,E.Blund,B.Mix, Crack, Chipping, Etc.....</td>
@@ -277,20 +236,6 @@
 </tr>
 
       </tr>
-<tr class="no-border">
-            <th class="no-border" colspan="10"></th> 
-</tr>
-
-     </tr>
-<tr class="no-border">
-            <th class="no-border" colspan="10"></th> 
-</tr>
-
-     </tr>
-<tr class="no-border">
-            <th class="no-border" colspan="10"></th> 
-</tr>
-     </tr>
 <tr class="no-border">
             <th class="no-border" colspan="10"></th> 
 </tr>
